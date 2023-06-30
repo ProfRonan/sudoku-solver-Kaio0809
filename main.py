@@ -1,6 +1,6 @@
 def solve_sudoku(board: list[list[int]]) -> list[list[int]]:
     def resolve(board: list[list[int]]) -> bool:
-        i, j = célula_vazia(board)
+        i, j = vazio(board)
         if i == None or j == None:
             return True 
 
@@ -40,7 +40,7 @@ def is_valid(board: list[list[int]]) -> bool:
 
     return True
 
-def célula_vazia(board: list[list[int]]) -> tuple[int, int]:
+def vazio(board: list[list[int]]) -> tuple[int, int]:
 
     for i in range(9):
         for j in range(9):
